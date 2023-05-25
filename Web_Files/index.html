@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OpsTree - War score Web</title>
+    <style> 
+        body {
+          background-image: url("./opstree.png");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        table, th, td {
+            border: 1px solid cadetblue;
+            font-size: 20px;
+            padding: 9px;
+            color: darkslategrey;
+            text-align: center;
+		margin-left: 3%;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-top: 15%;margin-left: 30%;">
+       <span style="font-family: system-ui;font-size: 30px;color: darkblue; margin-left: 15%;">OpsTree - War Team</span>
+            <table style="margin-top: 4%;">
+            <tbody>
+             <tr>
+                <th>Maximum Score</th>
+                <th>Self assessment score</th>
+		    <th>Automation Score</th>
+              </tr>
+              <tr>
+                <td id="total">total_assessment_score</td>
+                <td id="self">self_assesment_score</td>
+		    <td id="auto">auto_assesment_score</td>
+              </tr>
+            </tbody></table>
+    </div>
+</body>
+</html>
