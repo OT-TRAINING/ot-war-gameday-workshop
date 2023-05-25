@@ -36,7 +36,7 @@ mysql:
   password: password
 ```
 
-## Run application Docker steps
+## Run application Docker
 
 - Install docker on your machine
 
