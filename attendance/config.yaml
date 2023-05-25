@@ -1,0 +1,9 @@
+attendance:
+  api_port: "8081"
+
+mysql:
+  enabled: true
+  db_name: "attendancedb"
+  host: "database.ctvme1j7.us-east-1.rds.amazonaws.com"
+  username: admin
+  password: passwrd
