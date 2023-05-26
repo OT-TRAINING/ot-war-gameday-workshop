@@ -18,8 +18,6 @@ The available endpoints for this application are:-
 
 |**ENDPOINT**|**REQUEST TYPE**|**DESCRIPTION**|
 |------------|----------------|---------------|
-| `/attendance/create` | POST | create endpoint collects the JSON payload of request and write the data to MySQL. |
-| `/attendance/search` | GET | search endpoint fetch the information from MySQL server and return the JSON reponse. |
 | `/attendance/healthz` | GET | healthz endpoint checks the DB connectivity and tells that application is ready to serve the requests or not. |
 
 ## Quickstart
@@ -38,17 +36,31 @@ mysql:
   password: password
 ```
 
+## Run application Docker
+
+- Install docker on your machine
+
+- For building docker image
+```shell
+docker build -t opstree/empms-attendance:1.0 -f Dockerfile .
+```
+
+- For running docker container with image build with above code and running on port 80
+```shell
+docker run -d -p 80:8081 opstree/empms-attendance:1.0
+```
+
+## Run application locally
+
+- Setup/Install Go on your machine
+
 ```shell
 # For compiling code
-make build
+go build
 ```
 
 ```shell
 # For running code locally
 export CONFIG_FILE=/path/to/config.yaml
 ./attendance
-```
-
-```shell
-make build-image
 ```
