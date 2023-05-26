@@ -4,6 +4,6 @@ attendance:
 mysql:
   enabled: true
   db_name: "attendancedb"
-  host: "database.ctvme1j7.us-east-1.rds.amazonaws.com"
-  username: admin
-  password: passwrd
+  host: "empms-db:3306"
+  username: root
+  password: password
