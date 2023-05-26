@@ -42,7 +42,7 @@ mysql:
 
 - For building docker image
 ```shell
-make build-image
+docker build -t opstree/empms-attendance:1.0 -f Dockerfile .
 ```
 
 - For running docker container with image build with above code and running on port 80
@@ -56,7 +56,7 @@ docker run -d -p 80:8081 opstree/empms-attendance:1.0
 
 ```shell
 # For compiling code
-make build
+go build
 ```
 
 ```shell
